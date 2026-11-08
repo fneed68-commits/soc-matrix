@@ -1,0 +1,4 @@
+node_modules/
+soc_database.db
+.env
+*.log
