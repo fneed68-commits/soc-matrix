@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const http = require('http');
 const { Server } = require("socket.io");
@@ -15,23 +16,21 @@ app.use(express.json());
 const PLATFORM_API_URL = "https://arabic-business-experts.vercel.app/api/chat";
 const SECURITY_AGENT_SLUG = "security-expert";
 
-// ==========================================
-// 1. قاعدة البيانات وقائمة الحظر
-// ==========================================
 const db = new sqlite3.Database('./soc_database.db');
-db.run(`CREATE TABLE IF NOT EXISTS alerts (
-    id TEXT PRIMARY KEY, severity TEXT, threatType TEXT, sourceIp TEXT, trustScore INTEGER, status TEXT, time TEXT
-)`);
+db.run(`CREATE TABLE IF NOT EXISTS alerts (id TEXT PRIMARY KEY, severity TEXT, threatType TEXT, sourceIp TEXT, trustScore INTEGER, status TEXT, time TEXT)`);
 
 let ipTracker = {};
 let blockedIPs = new Set(); 
-let alertCounter = 0; // عدّاد لضمان عدم تكرار المعرفات
+let ephemeralTimers = {}; // لتتبع الحظر المؤقت
+let alertCounter = 0;
 
 // ==========================================
-// 2. محرك التحليل
+// محرك التحليل (Dual-Signal Gating)
 // ==========================================
 function analyzeLog(log) {
-    const { ip, eventType, port } = log;
+    const { ip, eventType, port, telemetrySpike } = log;
+    
+    // إذا كان الـ IP محظوراً، تجاهل الهجمات
     if (blockedIPs.has(ip)) return;
 
     const now = Date.now();
@@ -43,52 +42,59 @@ function analyzeLog(log) {
     const failedLogins = recentLogs.filter(l => l.event === 'LOGIN_FAILED').length;
     const scannedPorts = new Set(recentLogs.filter(l => l.event === 'PORT_SCAN').map(l => l.port)).size;
 
-    if (failedLogins >= 3) { createAlert(ip, "Brute Force Attack", "Critical", 10); ipTracker[ip] = []; }
-    else if (scannedPorts >= 5) { createAlert(ip, "Port Scanning", "High", 25); ipTracker[ip] = []; }
+    // الإشارة التقنية الحتمية (Telemetry Signal)
+    // في الواقع، هذه تأتي من مراقبة الشبكة (مثل RPS Spike)
+    if (telemetrySpike && (failedLogins >= 3 || scannedPorts >= 5)) {
+        // احتواء مؤقت (15 ثانية في العرض التجريبي)
+        createAlert(ip, failedLogins >= 3 ? "Brute Force (Telemetry Verified)" : "Port Scan (Telemetry Verified)", "Critical", 10, true);
+        ipTracker[ip] = []; 
+    } 
+    // إذا لم تكن هناك إشارة تقنية، نسجل الحادث كـ "تحت المراجعة" (لا نحظر تلقائياً)
+    else if (failedLogins >= 3 || scannedPorts >= 5) {
+        createAlert(ip, "Suspicious Activity (Needs Review)", "Medium", 50, false);
+        ipTracker[ip] = [];
+    }
 }
 
-function createAlert(ip, threatType, severity, score) {
+function createAlert(ip, threatType, severity, score, autoContain) {
     alertCounter++;
-    // معرف فريد 100% باستخدام الوقت + العدّاد
     const uniqueId = `INC-${Date.now().toString().slice(-5)}-${alertCounter}`;
     
+    // إذا كان احتواءً تلقائياً، نضيفه لقائمة الحظر المؤقت
+    let status = "Under Review";
+    if (autoContain) {
+        status = "Ephemeral-Contained";
+        blockedIPs.add(ip);
+        
+        // فك الحظر التلقائي بعد 15 ثانية (Auto-TTL)
+        if (ephemeralTimers[ip]) clearTimeout(ephemeralTimers[ip]);
+        ephemeralTimers[ip] = setTimeout(() => {
+            blockedIPs.delete(ip);
+            console.log(`⏱️ انتهى الحظر المؤقت للـ IP: ${ip}`);
+            io.emit('ip_unblocked', ip); // إبلاغ الواجهة
+        }, 15000); 
+    }
+
     const alert = {
         id: uniqueId, severity, threatType, sourceIp: ip,
-        trustScore: score, status: "Auto-Contained",
+        trustScore: score, status: status,
         time: new Date().toLocaleTimeString('en-US', { hour12: false })
     };
     
-    // استخدام INSERT OR IGNORE لتجاهل التكرار بدلاً من الانهيار
     const stmt = db.prepare(`INSERT OR IGNORE INTO alerts VALUES (?, ?, ?, ?, ?, ?, ?)`);
-    
-    // إضافة مستمع للخطأ لمنع انهيار السيرفر نهائياً
-    stmt.on('error', (err) => {
-        console.log(`⚠️ خطأ في قاعدة البيانات (تم تجاهله): ${err.message}`);
-    });
-
     stmt.run(alert.id, alert.severity, alert.threatType, alert.sourceIp, alert.trustScore, alert.status, alert.time, (err) => {
-        if (!err) {
-            io.emit('new_alert', alert);
-        }
+        if (!err) io.emit('new_alert', alert);
     });
     stmt.finalize();
 }
 
 // ==========================================
-// 3. WebSockets
+// WebSockets & APIs
 // ==========================================
 io.on('connection', (socket) => {
-    console.log('🟢 واجهة متصلة');
     db.all(`SELECT * FROM alerts ORDER BY rowid DESC LIMIT 20`, [], (err, rows) => {
         if (!err && rows) rows.forEach(alert => socket.emit('new_alert', alert));
     });
-});
-
-// ==========================================
-// 4. APIs
-// ==========================================
-app.get('/api/alerts', (req, res) => {
-    db.all(`SELECT * FROM alerts ORDER BY rowid DESC LIMIT 50`, [], (err, rows) => res.json(rows || []));
 });
 
 app.get('/api/stats', (req, res) => {
@@ -100,45 +106,41 @@ app.get('/api/stats', (req, res) => {
 app.post('/api/analyze', async (req, res) => {
     const { threatType, sourceIp, severity } = req.body;
     const prompt = `أنت خبير SOC. هجوم: ${threatType} من ${sourceIp} (خطورة: ${severity}). اكتب خطة استجابة من 3 خطوات مختصرة باللغة العربية.`;
-    
     try {
-        console.log(`🧠 إرسال الطلب إلى منصة خبراء الأعمال للهجوم: ${threatType}`);
         const response = await axios.post(PLATFORM_API_URL, {
-            messages: [{ role: "user", content: prompt }],
-            agentSlug: SECURITY_AGENT_SLUG
-        }, {
-            headers: { 'Content-Type': 'application/json' },
-            timeout: 30000
-        });
-        const analysis = response.data.reply || response.data.error || "لم يتم استلام رد.";
-        res.json({ analysis });
+            messages: [{ role: "user", content: prompt }], agentSlug: SECURITY_AGENT_SLUG
+        }, { headers: { 'Content-Type': 'application/json' }, timeout: 30000 });
+        res.json({ analysis: response.data.reply || "لم يتم استلام رد." });
     } catch (error) {
-        console.error("❌ خطأ:", error.message);
         res.status(500).json({ error: `فشل الاتصال بالمنصة: ${error.message}` });
     }
 });
 
+// تثبيت الحظر يدوياً (Human-in-the-loop)
 app.post('/api/mitigate', (req, res) => {
     const { ip } = req.body;
     if (!ip) return res.status(400).json({ error: "IP required" });
-
+    
+    // إلغاء المؤقت المؤقت (Auto-TTL) وجعله حظراً دائماً
+    if (ephemeralTimers[ip]) clearTimeout(ephemeralTimers[ip]);
     blockedIPs.add(ip);
-    console.log(`🛡️ تم حظر الـ IP بنجاح (محاكاة): ${ip}`);
-
-    db.run(`UPDATE alerts SET status = 'Mitigated' WHERE sourceIp = ?`, [ip]);
+    
+    db.run(`UPDATE alerts SET status = 'Permanently-Blocked' WHERE sourceIp = ?`, [ip]);
     io.emit('ip_mitigated', ip);
-
-    res.json({ success: true, message: `تم حظر ${ip} وتحديث حالته.` });
+    res.json({ success: true });
 });
 
 // ==========================================
-// 5. محاكي الهجمات
+// محاكي الهجمات
 // ==========================================
 setInterval(() => {
     const ips = ['185.22.1.10', '45.11.2.55', '103.4.5.6', '192.168.1.5'];
     const ip = ips[Math.floor(Math.random() * ips.length)];
     const event = Math.random() > 0.5 ? 'LOGIN_FAILED' : 'PORT_SCAN';
-    for(let i=0; i<5; i++) analyzeLog({ ip, eventType: event, port: Math.floor(Math.random() * 1000) });
+    // محاكاة الإشارة التقنية (Telemetry Spike) بنسبة 60%
+    const telemetrySpike = Math.random() > 0.4; 
+    
+    for(let i=0; i<5; i++) analyzeLog({ ip, eventType: event, port: Math.floor(Math.random() * 1000), telemetrySpike });
 }, 8000);
 
-server.listen(3000, () => console.log(`🚀 SOC Matrix running on port 3000`));
+server.listen(3000, () => console.log(`🚀 SOC Matrix (Dual-Signal) running on port 3000`));
