@@ -25,7 +25,7 @@ let blockedIPs = new Set();
 let alertCounter = 0;
 
 // ==========================================
-// محرك التحليل
+// محرك التحليل (Dual-Signal Gating)
 // ==========================================
 function analyzeLog(log) {
     const { ip, eventType, port, telemetrySpike } = log;
@@ -100,6 +100,24 @@ app.get('/api/stats', async (req, res) => {
     res.json({ total_blocked: total || 0, critical_active: critical || 0 });
 });
 
+// ==========================================
+// استقبال السجلات الحقيقية (Real Data Ingestion)
+// ==========================================
+app.post('/api/logs', async (req, res) => {
+    const { ip, eventType, port } = req.body;
+    
+    if (!ip || !eventType) {
+        return res.status(400).json({ error: "Missing ip or eventType" });
+    }
+
+    console.log(`📥 سجل حقيقي تم استقباله: ${eventType} من ${ip}`);
+    
+    // نعتبر أي سجل حقيقي قادم من الخارج بمثابة "إشارة تقنية" (Telemetry Spike)
+    analyzeLog({ ip, eventType, port: port || 0, telemetrySpike: true });
+    
+    res.status(202).json({ message: "Log processed successfully" });
+});
+
 app.post('/api/analyze', async (req, res) => {
     const { threatType, sourceIp, severity } = req.body;
     const prompt = `أنت خبير SOC. هجوم: ${threatType} من ${sourceIp} (خطورة: ${severity}). اكتب خطة استجابة من 3 خطوات مختصرة باللغة العربية.`;
@@ -123,15 +141,8 @@ app.post('/api/mitigate', async (req, res) => {
     res.json({ success: true });
 });
 
-// محاكي الهجمات
-setInterval(() => {
-    const ips = ['185.22.1.10', '45.11.2.55', '103.4.5.6', '192.168.1.5'];
-    const ip = ips[Math.floor(Math.random() * ips.length)];
-    const event = Math.random() > 0.5 ? 'LOGIN_FAILED' : 'PORT_SCAN';
-    const telemetrySpike = Math.random() > 0.4; 
-    
-    for(let i=0; i<5; i++) analyzeLog({ ip, eventType: event, port: Math.floor(Math.random() * 1000), telemetrySpike });
-}, 8000);
-
+// ==========================================
+// تشغيل السيرفر
+// ==========================================
 const PORT = process.env.PORT || 3000;
 server.listen(PORT, () => console.log(`🚀 SOC Matrix connected to Supabase & running on port ${PORT}`));
