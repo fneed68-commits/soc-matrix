@@ -15,6 +15,7 @@ const server = http.createServer(app);
 const io = new Server(server, { cors: { origin: "*" } });
 
 app.use(cors());
+app.set('trust proxy', 1); // ضروري لـ Render لمعرفة IP الحقيقي
 app.use(express.json());
 
 const Redis = require('ioredis');
@@ -28,7 +29,7 @@ async function rateLimiter(req, res, next) {
     if (current === 1) await redis.expire(key, 60);
     if (current > 5) return res.status(429).json({ error: 'Too many requests' });
     next();
-  } catch (err) { next(); }
+  } catch (err) { console.error('🚨 Rate Limiter Error:', err.message); next(); }
 }
 
 const supabase = createClient(process.env.SUPABASE_URL, process.env.SUPABASE_KEY);
