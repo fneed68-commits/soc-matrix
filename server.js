@@ -1,3 +1,5 @@
+// SOC Matrix - Security Operations Center
+// Protected by Rate Limiter
 require('dotenv').config();
 const express = require('express');
 const http = require('http');
@@ -14,6 +16,20 @@ const io = new Server(server, { cors: { origin: "*" } });
 
 app.use(cors());
 app.use(express.json());
+
+const Redis = require('ioredis');
+const redis = new Redis(process.env.REDIS_URL || 'redis://localhost:6379');
+
+async function rateLimiter(req, res, next) {
+  try {
+    const ip = req.ip || 'unknown';
+    const key = 'rl:' + ip;
+    const current = await redis.incr(key);
+    if (current === 1) await redis.expire(key, 60);
+    if (current > 5) return res.status(429).json({ error: 'Too many requests' });
+    next();
+  } catch (err) { next(); }
+}
 
 const supabase = createClient(process.env.SUPABASE_URL, process.env.SUPABASE_KEY);
 const PLATFORM_API_URL = "https://arabic-business-experts.vercel.app/api/chat";
@@ -119,7 +135,7 @@ app.get('/api/stats', authenticateToken, async (req, res) => {
     res.json({ total_blocked: total || 0, critical_active: critical || 0 });
 });
 
-app.post('/api/logs', async (req, res) => {
+app.post('/api/logs', rateLimiter, async (req, res) => {
     const { ip, eventType, port } = req.body;
     if (!ip || !eventType) return res.status(400).json({ error: "Missing data" });
     console.log(`📥 سجل حقيقي: ${eventType} من ${ip}`);
