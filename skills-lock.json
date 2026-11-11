@@ -1,11 +1,1175 @@
 {
   "version": 2,
   "skills": {
+    "accessibility-testing": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "design-and-ui-ux/accessibility-testing/SKILL.md",
+      "computedHash": "0655fac9af42f4b0210dd7e233da2c733894997e03cde357f6a809876b5994c5"
+    },
+    "agent-evaluation": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "agent-engineering/agent-evaluation/SKILL.md",
+      "computedHash": "e3fe42a6690c8833534cadcb0884045d505cfe8a5424e2d182a6ff974ed22ffb"
+    },
+    "agent-observability": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "agent-engineering/agent-observability/SKILL.md",
+      "computedHash": "d1c56c3e7dc923cb3518e697d14786f2cf8d291571bee82af1cdac22ebc52feb"
+    },
+    "agent-red-teaming": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "agent-security/agent-red-teaming/SKILL.md",
+      "computedHash": "fb34b9cc1afdb486ca1d219ea64f76d433c77315ab8522b03783d5018c77b667"
+    },
+    "analytics-reporting": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "marketing-and-seo/analytics-reporting/SKILL.md",
+      "computedHash": "55d551364be9cb32cb12c10d21ccc701c6434332b64d21de22f1195be5ef047a"
+    },
+    "api-and-interface-design": {
+      "source": "addyosmani/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/api-and-interface-design/SKILL.md",
+      "computedHash": "f8cb4ee59fe787bf94bfe40086ca4652d3cb738e16805d10acca2da3b80a001e"
+    },
+    "api-design": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "api-and-integration/api-design/SKILL.md",
+      "computedHash": "60648f07e8a426c79219b87e37815fcf8b0b2219d9c4b452a6996ce183b62b03"
+    },
+    "api-integration": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "api-and-integration/api-integration/SKILL.md",
+      "computedHash": "a55af3d51925ceb5aae4003c4b0dd5ac353c6475931a0a7a6ac61123f9b87956"
+    },
+    "ask-matt": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/engineering/ask-matt/SKILL.md",
+      "computedHash": "7ff2383b40fe9d8f3e753d267d964fb2b44d120a948fd2a57c3b26ddfc318370"
+    },
+    "blog-post-writing": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "writing-and-content/blog-post-writing/SKILL.md",
+      "computedHash": "d80124f9ee64b3f9caca18aa973c7810c96dc9cfa9ad4743196aadcd9fbd0fdf"
+    },
+    "brainstorming": {
+      "source": "obra/superpowers",
+      "sourceType": "github",
+      "skillPath": "skills/brainstorming/SKILL.md",
+      "computedHash": "a7424777b7f81e3eb9b4556d29fe233553736d8255780d3e1feea190fef61fef"
+    },
+    "browser-testing-with-devtools": {
+      "source": "addyosmani/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/browser-testing-with-devtools/SKILL.md",
+      "computedHash": "4e76269b455e079e76f29e11fdd80c61a7dd6ef0ab12e26432ea1b782c0a245e"
+    },
+    "budget-planning": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "finance-and-accounting/budget-planning/SKILL.md",
+      "computedHash": "afe7087f6b11900b38350c873f156d06e8320c0b77c7c0d01f08c6368a9e091d"
+    },
+    "chatbot-conversation-design": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "communication/chatbot-conversation-design/SKILL.md",
+      "computedHash": "67a4be4f7cf0b9d6e448252096814763384821630f9f2454aa920e98535821e5"
+    },
+    "chief-of-staff": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/in-progress/chief-of-staff/SKILL.md",
+      "computedHash": "dc3348d0f641956ea78dafa037aea745154c516a286ed4156b0c2ec0cbcf581b"
+    },
+    "churn-analysis": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "customer-success/churn-analysis/SKILL.md",
+      "computedHash": "f2efde150f88322a9fac919a54666dbebc068881d34c28d1fc9aa5069911ac77"
+    },
+    "ci-cd": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "devops-and-infrastructure/ci-cd/SKILL.md",
+      "computedHash": "74b06fd0456340e0bfb9827e94882b62c6853455e9dc30f7e33f46a506e2bee2"
+    },
+    "ci-cd-and-automation": {
+      "source": "addyosmani/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/ci-cd-and-automation/SKILL.md",
+      "computedHash": "fbffe27b3bc3df30ba2895a71b87b2f032bb7b163de762bc8900f2673631c96d"
+    },
+    "claude-handoff": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/in-progress/claude-handoff/SKILL.md",
+      "computedHash": "e903af941877ac195671a1eff550ba42266f5f5a4028ebeae4cd1fec82b88dd4"
+    },
+    "cloud-monitoring": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "devops-and-infrastructure/cloud-monitoring/SKILL.md",
+      "computedHash": "8b0f4aaf4d046e14a6d905ff042623d413820b0803011b4ecdbd8752d76bd01d"
+    },
+    "code-documentation": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "code-and-development/code-documentation/SKILL.md",
+      "computedHash": "11a53f12916fd50091952a28c2693c857f1771ac18c1756612b86d37d055ec86"
+    },
+    "code-review": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "code-and-development/code-review/SKILL.md",
+      "computedHash": "7672cd3f8195b6e7f22056274c44306f069be5c7d66c86f619cc957a9756bcae"
+    },
+    "code-review-and-quality": {
+      "source": "addyosmani/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/code-review-and-quality/SKILL.md",
+      "computedHash": "e03fe4f99d65c959547e3e5d65229fe56a8cdf19144b747d78ebebcfffb76346"
+    },
+    "code-simplification": {
+      "source": "addyosmani/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/code-simplification/SKILL.md",
+      "computedHash": "48e59225ea45232623e47d35d4ac6028fb2f37a9fbbc0563313d67bab448f664"
+    },
+    "codebase-design": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/engineering/codebase-design/SKILL.md",
+      "computedHash": "d40f025dc1b0f2020663260f38f2bcb8d6ed3523afb11e5fda624b01238677e8"
+    },
+    "competitive-battlecard-creation": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "sales/competitive-battlecard-creation/SKILL.md",
+      "computedHash": "e99f31ff9eab3240a3349cf47d84183583413391cb262a9327286a7b54d34d63"
+    },
+    "compliance-checklist-generation": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "legal-and-compliance/compliance-checklist-generation/SKILL.md",
+      "computedHash": "f0499c2050d31b6cbd14b4856d787fbfb47ecba5d1f8f7bef91c250ee2aae5d6"
+    },
+    "constraint-driven-development": {
+      "source": "addyosmani/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/constraint-driven-development/SKILL.md",
+      "computedHash": "6cbbb88bcec7893403d794ea0411a34ea3e913517a86fa86d2d0a1707a7095ba"
+    },
+    "content-strategy": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "marketing-and-seo/content-strategy/SKILL.md",
+      "computedHash": "05af389034403165e58b0128a788c9ac012205b63d6598a8266270d468c754d8"
+    },
+    "context-compression": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "context-engineering/context-compression/SKILL.md",
+      "computedHash": "601ede398b69541d9cef7ca721996e00819276ac0efa870d6204657f0e2e3e7f"
+    },
+    "context-engineering": {
+      "source": "addyosmani/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/context-engineering/SKILL.md",
+      "computedHash": "0b9e3d177ec4e42d9b39c76ef8ee751f88cce40e3879c785a1a8c6eeabc6119d"
+    },
+    "context-injection": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "context-engineering/context-injection/SKILL.md",
+      "computedHash": "d5f6c08194256f365fa8c323447814b1438505f41f91e827baa1fcb287e7e2dc"
+    },
+    "context-optimization": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "context-engineering/context-optimization/SKILL.md",
+      "computedHash": "52a7acf466045cb9e9038a37ef66f7e6651473a7f901a6835838c50205d1169c"
+    },
+    "context-ranking": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "context-engineering/context-ranking/SKILL.md",
+      "computedHash": "58ee66535dd7135495a65b457b701b40a6a62b8a72a9c538f6dfdb72e1bfdd04"
+    },
+    "context-retrieval": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "context-engineering/context-retrieval/SKILL.md",
+      "computedHash": "887c6d1463a2f8d52f6dc1d327e14118973ca7a9443f1f285b6ddaf211fe6f6c"
+    },
+    "contract-review": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "legal-and-compliance/contract-review/SKILL.md",
+      "computedHash": "b7ef1d089c9617b57dd1c9749c17283e98d8bdeacb427f102499795427ebbc86"
+    },
+    "copywriting": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "writing-and-content/copywriting/SKILL.md",
+      "computedHash": "a481ddb2d3cc53a9b8cb4e390c323374ea53364fd44ecd1b112147a940593596"
+    },
+    "crm-data-enrichment": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "sales/crm-data-enrichment/SKILL.md",
+      "computedHash": "0351cf349149cdc4ae1be8da0c6e84da4b3c04fa328bf9c5fecdc862b16944c2"
+    },
+    "customer-feedback-analysis": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "customer-success/customer-feedback-analysis/SKILL.md",
+      "computedHash": "bd90fd9dd15e2e7f8bea1c4b0275a32e05aa853a02ef63fb79f7d9a164e879fc"
+    },
+    "data-analysis": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "data-and-analytics/data-analysis/SKILL.md",
+      "computedHash": "3de5a7939f8c4711c7a42b314e857184fcff4d9067011f1b562c5f296ee3024f"
+    },
+    "data-cleaning": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "data-and-analytics/data-cleaning/SKILL.md",
+      "computedHash": "b3f575f3b2d50a24c8098343188cd24f197c677ad014f00e02c09f88dfb85bbe"
+    },
+    "data-labeling": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "ai-ml-operations/data-labeling/SKILL.md",
+      "computedHash": "0e8f4e54e243ffb50e1dacf73c06e0f0f5d866807fddb8e47bfe6733f870a707"
+    },
+    "data-visualization": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "data-and-analytics/data-visualization/SKILL.md",
+      "computedHash": "a1f44d8df180f222611b09f0d90e5e56f3643fcadc640f8b4030c4324e792e4c"
+    },
+    "database-backup": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "database/database-backup/SKILL.md",
+      "computedHash": "826f4aa065b468eef231d5c288221544b4befe66e541fb5811ae37b6b9da6114"
+    },
+    "database-migration": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "database/database-migration/SKILL.md",
+      "computedHash": "bd757969c322ae5cc497267b1ba6913833d8f1eef3b64a6f9880523b3ddc0c29"
+    },
+    "database-schema-design": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "database/database-schema-design/SKILL.md",
+      "computedHash": "9120b3859d47db60b9432343255d9f6be4a959c983d660fc8055c1ddc5e60721"
+    },
+    "database-seeding": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "database/database-seeding/SKILL.md",
+      "computedHash": "2a88c15c43f0c037ce4e822a0cb58d7b4e82fcd328864b99e0bf12c361d74392"
+    },
+    "debugging": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "code-and-development/debugging/SKILL.md",
+      "computedHash": "23459a95a4d745b7166ab0aa04072ad0c1ad4fd178ebfa513b13da7b42f294b3"
+    },
+    "debugging-and-error-recovery": {
+      "source": "addyosmani/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/debugging-and-error-recovery/SKILL.md",
+      "computedHash": "f7390b705fa186b54fceae6faa77be7cb0ba1cf24c1dc4508c7c84ec149615f5"
+    },
+    "deep-research": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "research-and-knowledge/deep-research/SKILL.md",
+      "computedHash": "661629af6551322945ef9828f5d649374ca2993a79f867afadc8002052b5abe6"
+    },
+    "dependency-scanning": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "security/dependency-scanning/SKILL.md",
+      "computedHash": "174d779573460c03b67f9ff0cbdc6492309285a7e26a05ddde173c3bda63b67f"
+    },
+    "deprecation-and-migration": {
+      "source": "addyosmani/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/deprecation-and-migration/SKILL.md",
+      "computedHash": "0f86b1fd18c377eb69fd1991046d49f0a848bd32f7318d1399020b79a6391cec"
+    },
+    "diagnosing-bugs": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/engineering/diagnosing-bugs/SKILL.md",
+      "computedHash": "87c78ae966e591f9ceb177789cc5cc9de69277cd26679ffd36ca5300f430d513"
+    },
+    "diagnosing-superpowers": {
+      "source": "obra/superpowers",
+      "sourceType": "github",
+      "skillPath": "skills/diagnosing-superpowers/SKILL.md",
+      "computedHash": "44d0295c3d59d6418f80c96e40d8e7b7ece99513ab6e63e5d04b1cf87cc5bbab"
+    },
+    "dispatching-parallel-agents": {
+      "source": "obra/superpowers",
+      "sourceType": "github",
+      "skillPath": "skills/dispatching-parallel-agents/SKILL.md",
+      "computedHash": "d799e464fdfb0edc80b3b7ad7cce03e64ee07fc5db231c988688a81438503659"
+    },
+    "docker-compose-setup": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "devops-and-infrastructure/docker-compose-setup/SKILL.md",
+      "computedHash": "7a6eae35101c89acda464c21f644701f481ddfc66cc5b9cd57966ee0055692fd"
+    },
+    "documentation-and-adrs": {
+      "source": "addyosmani/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/documentation-and-adrs/SKILL.md",
+      "computedHash": "a7fa200df9d2a41ac7cac858c4a78a26e220308488fbe25e376b7e755ffbc612"
+    },
+    "domain-modeling": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/engineering/domain-modeling/SKILL.md",
+      "computedHash": "b78689833404148c769077355e12dbe5ad996a158a1e21e58ddf169e439d9d8c"
+    },
+    "doubt-driven-development": {
+      "source": "addyosmani/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/doubt-driven-development/SKILL.md",
+      "computedHash": "bc1bb71936eb44e88bdae4699abe02756747eb8f36c2d38135721fa7f3d25085"
+    },
+    "dynamic-application-security-testing": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "security/dynamic-application-security-testing/SKILL.md",
+      "computedHash": "4743d472e4af0205b8c6f26405485df1bc16deb3fcd527f21608ab054de87dae"
+    },
+    "email-drafting": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "communication/email-drafting/SKILL.md",
+      "computedHash": "a01184b7068885fa33fa1098e3e14e0ae116031e3c770eb4c588c89f49b53bf1"
+    },
+    "eu-ai-act-readiness": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "legal-and-compliance/eu-ai-act-readiness/SKILL.md",
+      "computedHash": "3a1f026f076e933691b7bf1722138c49223386001e048f4af1e832d481f58741"
+    },
+    "executing-plans": {
+      "source": "obra/superpowers",
+      "sourceType": "github",
+      "skillPath": "skills/executing-plans/SKILL.md",
+      "computedHash": "58b364f6e3f64602c7cfd0b34ceaad9de95d41fe7e4b46b274843ba19fc01ccc"
+    },
+    "expense-categorization": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "finance-and-accounting/expense-categorization/SKILL.md",
+      "computedHash": "806b353b65d7e32205861ddd4be618ba66d20321c30d98333cccc0d2bafaa4ba"
+    },
+    "exploratory-data-analysis": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "data-and-analytics/exploratory-data-analysis/SKILL.md",
+      "computedHash": "f5451525b598a79298ddd0a13cf10b06b26c51ec2f24157364dfb9e9364eecf8"
+    },
+    "fact-checking": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "research-and-knowledge/fact-checking/SKILL.md",
+      "computedHash": "582488914e67f72b58efaa3b102233e593d8d4f1c34c6ecf4aa6a9beb3f6bd1a"
+    },
+    "file-organization": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "productivity-and-workflow/file-organization/SKILL.md",
+      "computedHash": "9938bd0b8be0486324f5f5ea8bf94f45846d0bbf116000d87253c8cef808292b"
+    },
+    "financial-modeling": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "finance-and-accounting/financial-modeling/SKILL.md",
+      "computedHash": "56f8ec5dee9870402e8bb2e967a762c073dc2fb52215d0c35595707092a7cc8e"
+    },
+    "financial-report-generation": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "finance-and-accounting/financial-report-generation/SKILL.md",
+      "computedHash": "38ec5bae52ff10c167658860022f4ce4379427b397df4de2667a406a0ba69b6b"
+    },
+    "finishing-a-development-branch": {
+      "source": "obra/superpowers",
+      "sourceType": "github",
+      "skillPath": "skills/finishing-a-development-branch/SKILL.md",
+      "computedHash": "7e24d821d45b8f10773edd9f1a4be2fac90eedae4f8fc8e70e34e27e44d3f3c0"
+    },
+    "frontend-design": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "design-and-ui-ux/frontend-design/SKILL.md",
+      "computedHash": "94d8170bf10a4fe486f1ef08d481cb99095164c119652b2a8b95caeaea6989b4"
+    },
+    "frontend-ui-engineering": {
+      "source": "addyosmani/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/frontend-ui-engineering/SKILL.md",
+      "computedHash": "73a13aa14acf407518dccde3d021becac59e42e0a90a6a52a86dc53c3a279d12"
+    },
+    "git-guardrails-claude-code": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/misc/git-guardrails-claude-code/SKILL.md",
+      "computedHash": "7aa92e9d469c6cd0b24ed8accb2e4be681c44c1524d71604c06b4055b7b56482"
+    },
+    "git-workflow-and-versioning": {
+      "source": "addyosmani/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/git-workflow-and-versioning/SKILL.md",
+      "computedHash": "860b88bf82d823eaed15b9b9fa9ce4273f94c7bdcf3aeaa3e6649eb578763d4b"
+    },
+    "graphql-api-design": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "api-and-integration/graphql-api-design/SKILL.md",
+      "computedHash": "43358bb77effabeba100a386681eda8a2f1a6a80e2b39e9fe5bff87a6a0f73d1"
+    },
+    "grill-me": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/productivity/grill-me/SKILL.md",
+      "computedHash": "ab1acb9fbd9eaee03da254abb8a8de228d1e7a07475fe959da4a5eefa34ea4b9"
+    },
+    "grill-with-docs": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/engineering/grill-with-docs/SKILL.md",
+      "computedHash": "02e258f41d210f9b2e7cce9faf62b3c59e8fcebe5d2736369c3cd07d471324f8"
+    },
+    "grilling": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/productivity/grilling/SKILL.md",
+      "computedHash": "485451958784497cd4c4dbea13cb5bbb579da58fac0d0e45f3bcb310fab68ac7"
+    },
+    "handoff": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/productivity/handoff/SKILL.md",
+      "computedHash": "f60a2c3688379b7a306b3a7b8dd4120eab39da44c74fa2cb62d6424935f04aa7"
+    },
+    "human-in-the-loop": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "agent-engineering/human-in-the-loop/SKILL.md",
+      "computedHash": "ee0fdcde3d36a364c98f6332a731929f6f7fa42a08755ecc91749efdc9d2d6d5"
+    },
+    "hyperparameter-tuning": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "ai-ml-operations/hyperparameter-tuning/SKILL.md",
+      "computedHash": "2bf9caa87483614d5ad6dcd96b51bb76f0535e6ebd0cf410e989d40a0a4ee527"
+    },
+    "idea-refine": {
+      "source": "addyosmani/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/idea-refine/SKILL.md",
+      "computedHash": "f93acea3b4a197e2fda976bc9b7aa1aafedfd819fe190c7b33e70eaf745820fb"
+    },
+    "implement": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/engineering/implement/SKILL.md",
+      "computedHash": "560465496ad0669329993bfdd0604e5c93b5c2446309a76f486040010b063908"
+    },
+    "implement-spec": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/engineering/implement-spec/SKILL.md",
+      "computedHash": "c3474ef320861d793e8b30d41fbdd2cb0ceaa1081bb5c81b7f26c455eb776573"
+    },
+    "improve-codebase-architecture": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/engineering/improve-codebase-architecture/SKILL.md",
+      "computedHash": "f0820b18426a7d9a6c823a890988ba0ac70bf0fd596d30d7ef07c88558728c23"
+    },
+    "incremental-implementation": {
+      "source": "addyosmani/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/incremental-implementation/SKILL.md",
+      "computedHash": "62ef93c6389f110af49ed4fad1fe2c27d3d9dd2d8fe0d0f6db089489c3d4aac3"
+    },
+    "infrastructure-as-code": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "devops-and-infrastructure/infrastructure-as-code/SKILL.md",
+      "computedHash": "b599b964131a7676779441b469da6feff209e9ec04092b5fa8e7a95935aeefca"
+    },
+    "interview-me": {
+      "source": "addyosmani/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/interview-me/SKILL.md",
+      "computedHash": "68615337944c1d56cd9db6b934e247ff1d67600dd9db3d41cc9bf7236b9d986c"
+    },
+    "invoice-processing": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "finance-and-accounting/invoice-processing/SKILL.md",
+      "computedHash": "b92afbec6a13934cd706ba54655d5f55306fe32a82d7dfdc51851d1416811995"
+    },
+    "keyword-research": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "marketing-and-seo/keyword-research/SKILL.md",
+      "computedHash": "11416ae4b0a82c7c807d73c1283ea587894064a4ae2f34bb07ef76fc11835504"
+    },
+    "knowledge-base-article-writing": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "customer-success/knowledge-base-article-writing/SKILL.md",
+      "computedHash": "03d1207a5579192302a5c93d784e02d62a894069a8dd1f3e3149500da234eab1"
+    },
+    "knowledge-graph-creation": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "research-and-knowledge/knowledge-graph-creation/SKILL.md",
+      "computedHash": "696b742718bf050017324621e96d3beb5dbadc81176c68ac0f255bb06853c3d9"
+    },
+    "kubernetes-deployment": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "devops-and-infrastructure/kubernetes-deployment/SKILL.md",
+      "computedHash": "52817aab113b140847ad3fe55e623827b39332bba5427bae9e5cd60be458b69b"
+    },
+    "lead-scoring": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "sales/lead-scoring/SKILL.md",
+      "computedHash": "24f318b87559b36ce142fa753930375f0b5d69e67098d4bc0bda920a011e666b"
+    },
+    "license-analysis": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "legal-and-compliance/license-analysis/SKILL.md",
+      "computedHash": "91b03a158a94d2ac9ecf9c82505785f9e90f4dd6a0392b2328a665af34909179"
+    },
+    "literature-review": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "research-and-knowledge/literature-review/SKILL.md",
+      "computedHash": "a4ffc0a42a9e400c0b3f71fa39627abe2a283d712a21c95a54c33624460a0bda"
+    },
+    "logo-design": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "design-and-ui-ux/logo-design/SKILL.md",
+      "computedHash": "810ddec12a5634720ec4988346f4b7a3c271381f5989892ccae41dafad5c49c9"
+    },
+    "loop-me": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/in-progress/loop-me/SKILL.md",
+      "computedHash": "5dac8f9919f3e1a528a4f1f00db07c81c3e6092e706376d81c697d16422ab163"
+    },
+    "mcp-server-building": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "agent-engineering/mcp-server-building/SKILL.md",
+      "computedHash": "c4cf87d48e02b625e796dca015268280d2b7c87ce828e82aaade326e0f259dc0"
+    },
+    "meeting-scheduler": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "productivity-and-workflow/meeting-scheduler/SKILL.md",
+      "computedHash": "121777070d252d723f3909ef3fa19c10dad4c77ad22694af9e3830250b158229"
+    },
+    "meeting-transcription": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "communication/meeting-transcription/SKILL.md",
+      "computedHash": "94110ca099dcd7df64a4969c7fddce221ac69f4f1cc2d36760568158bc0647cb"
+    },
+    "migrate-to-shoehorn": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/misc/migrate-to-shoehorn/SKILL.md",
+      "computedHash": "a63549df6d5b5c6595029f8c504ccf31a12f01312f03db70da4b45cb10ba5ca8"
+    },
+    "ml-pipeline-creation": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "ai-ml-operations/ml-pipeline-creation/SKILL.md",
+      "computedHash": "2229859eae911e2f0643193fefc803f33d3de36bd22734043d0665c6a991d7e0"
+    },
+    "model-deployment": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "ai-ml-operations/model-deployment/SKILL.md",
+      "computedHash": "2ffb851dfd8b9ddca5669607977ee23a4b1e4f33ba7e58d1a8b56629209c8e26"
+    },
+    "model-training": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "ai-ml-operations/model-training/SKILL.md",
+      "computedHash": "b58aa32395f2828b6dc78a05ef3733212dfada2d9a4c1a25d15300abf6d16786"
+    },
     "modern-web-guidance": {
       "source": "GoogleChrome/modern-web-guidance",
       "sourceType": "github",
       "skillPath": "skills/modern-web-guidance/SKILL.md",
       "computedHash": "9e69ce00dc314b64f6664031b70295ea46c7de93ac682c624808df6e48e08b66"
+    },
+    "multi-agent-orchestration": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "agent-engineering/multi-agent-orchestration/SKILL.md",
+      "computedHash": "f1fb472f8f795a5279d99f5663e67fae7276c50f133a6379ed68a919cd99bd75"
+    },
+    "note-taking": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "productivity-and-workflow/note-taking/SKILL.md",
+      "computedHash": "3d0b1d4d991b9dca65187e775335f06cf1aca06da4c68a43fb913bb04bfa1966"
+    },
+    "oauth-2-0-setup": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "api-and-integration/oauth-2-0-setup/SKILL.md",
+      "computedHash": "37cedc26eccb2e022d86afe87773d1b79ddfd49ca8d5934bab4bfe181277e5f2"
+    },
+    "observability-and-instrumentation": {
+      "source": "addyosmani/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/observability-and-instrumentation/SKILL.md",
+      "computedHash": "71661b8e1558d7eed8cdf93bfb731da1c3afed9b895b049ecf92792af0d8a364"
+    },
+    "onboarding-playbook-creation": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "customer-success/onboarding-playbook-creation/SKILL.md",
+      "computedHash": "aa971ec40bcd876c224a38d518742a565c499429566c053e551edccc3db5fbd0"
+    },
+    "pdf-processing": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "documents-and-files/pdf-processing/SKILL.md",
+      "computedHash": "3264270350d9f23e042f97bc356a092d6fca6090d6404727ecccfafd7dc5a006"
+    },
+    "performance-optimization": {
+      "source": "addyosmani/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/performance-optimization/SKILL.md",
+      "computedHash": "cfa0c39804554198a33e3beb2b0f920a1b468bb2e066822e1d08f4abeda3db33"
+    },
+    "planning-and-task-breakdown": {
+      "source": "addyosmani/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/planning-and-task-breakdown/SKILL.md",
+      "computedHash": "11b51e8874c451ef4d0d18f4a56f9210310f5364cc1b176a7df1ff36014cef41"
+    },
+    "pr": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/engineering/pr/SKILL.md",
+      "computedHash": "a66195583d0f9323004cdd4da169f93449071f29023671f3e31a916e740f6861"
+    },
+    "presentation-creation": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "communication/presentation-creation/SKILL.md",
+      "computedHash": "2624da0948df9b0b10497b99d8e0cb00c93237a6453b32408d05e534084076d7"
+    },
+    "privacy-policy-drafting": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "legal-and-compliance/privacy-policy-drafting/SKILL.md",
+      "computedHash": "6a07e00db25aeb271e78ea9aa13551f55879a054c41691eadddd9ff4638c24fe"
+    },
+    "project-management": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "productivity-and-workflow/project-management/SKILL.md",
+      "computedHash": "2848c1ea7f99cd9443e56da16ba7af60f6be68a33562b945607b79b52cd77b64"
+    },
+    "prompt-injection-defense": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "agent-security/prompt-injection-defense/SKILL.md",
+      "computedHash": "e5b244783d0a2410cd1d4a7d18f26c895f9b795428139fa0e6685321da89fb8e"
+    },
+    "proofreading": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "writing-and-content/proofreading/SKILL.md",
+      "computedHash": "57053110c59899a55d8a6087b028c3f986c2950c1cc02ab604f9efa9c8e3cce8"
+    },
+    "proposal-generation": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "sales/proposal-generation/SKILL.md",
+      "computedHash": "12a795f24abd5e019424c68afb16b272d5c9e9a9ced6c466b8ee2b061768ce27"
+    },
+    "prototype": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/engineering/prototype/SKILL.md",
+      "computedHash": "1e3ba2202a5b77b8aa50bc4447432331d6e42590e53ec0935689662cfed199ca"
+    },
+    "query-optimization": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "database/query-optimization/SKILL.md",
+      "computedHash": "c6fea5d4c92d360e9fd76a2e379702d3fb8ce2d585cf9aec7e2313f1583c5f0d"
+    },
+    "receiving-code-review": {
+      "source": "obra/superpowers",
+      "sourceType": "github",
+      "skillPath": "skills/receiving-code-review/SKILL.md",
+      "computedHash": "528d336858d6f7d22cfcb887a249409ce682cb7d37a939cb15a82f2576a35876"
+    },
+    "redis-best-practices": {
+      "source": "upstash/skills",
+      "sourceType": "github",
+      "skillPath": "skills/redis-best-practices/SKILL.md",
+      "computedHash": "d53b2a2a5036e8a9fd1d2c78caba5e6ac9fb71db71892402444b0c430b5b07ba"
+    },
+    "refactoring": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "code-and-development/refactoring/SKILL.md",
+      "computedHash": "0cc997483230da9d56004419f0c303cb6928b401c28b2039e512af76a1420abd"
+    },
+    "report-generation": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "communication/report-generation/SKILL.md",
+      "computedHash": "07384259704be6e41fa2633b1e5c9b15aedb54647afdaf1367034b90a60ecdf4"
+    },
+    "requesting-code-review": {
+      "source": "obra/superpowers",
+      "sourceType": "github",
+      "skillPath": "skills/requesting-code-review/SKILL.md",
+      "computedHash": "32bcc25e8c3315d0150f646ee0067c9d4bfbc7719c34012db9c202e17cce8a14"
+    },
+    "research": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/engineering/research/SKILL.md",
+      "computedHash": "7662666af51f8b1672ed7d88360d4b82656da21bb7b11c49e956eeb3036b85d5"
+    },
+    "retro": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/engineering/retro/SKILL.md",
+      "computedHash": "e260aefb7b75b3548a3ee9883afbf8808e521f2e86feec92399617894f83b7c2"
+    },
+    "sales-email-sequences": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "sales/sales-email-sequences/SKILL.md",
+      "computedHash": "d1d1400a62e2d79ba5b96a90dea8f4dbf913213877bba0108def8b08047c64f6"
+    },
+    "scaffold-exercises": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/misc/scaffold-exercises/SKILL.md",
+      "computedHash": "019bbcc250992c776244aa1c818aed4015364f65bb9d1dbfd3bef9bae196b065"
+    },
+    "security-and-hardening": {
+      "source": "addyosmani/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/security-and-hardening/SKILL.md",
+      "computedHash": "4970681073e6138c4cec8eca31546187f47723a61a7f1204710ae86d9f704517"
+    },
+    "security-audit": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "security/security-audit/SKILL.md",
+      "computedHash": "216455a6f7d33d73a0f24188ffefbac4184348966af8a8edee7332d0ef2210f0"
+    },
+    "seo-optimization": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "marketing-and-seo/seo-optimization/SKILL.md",
+      "computedHash": "ac865a05b0e859a6d56a990e991e8fc0d41bd9d6d9b48f873d04ebd1dae97324"
+    },
+    "setup-matt-pocock-skills": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/engineering/setup-matt-pocock-skills/SKILL.md",
+      "computedHash": "9659e7025d4cf1c0a0b40ddff32ed4b8debb87a4b20d7a52ff89c506a638df69"
+    },
+    "setup-pre-commit": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/misc/setup-pre-commit/SKILL.md",
+      "computedHash": "98523a8db5977c41a095834df8697123bb845ff6ddbb9500733b161f11441a37"
+    },
+    "setup-ts-deep-modules": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/in-progress/setup-ts-deep-modules/SKILL.md",
+      "computedHash": "8a3136caaea8fa439521917a624496769eba40cf8c59f62b4113a0dc916288a3"
+    },
+    "shipping-and-launch": {
+      "source": "addyosmani/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/shipping-and-launch/SKILL.md",
+      "computedHash": "ae9b095cfb74edd0d2b63c24aaca99e5a2f95b50527a7508841b501eabd3820a"
+    },
+    "skill-supply-chain-audit": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "agent-security/skill-supply-chain-audit/SKILL.md",
+      "computedHash": "92dcf2d517e4b6691d9c3329095b736a6ff16917ee5948005157ca703b674152"
+    },
+    "social-media-posting": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "marketing-and-seo/social-media-posting/SKILL.md",
+      "computedHash": "add4c2dfbb78275d3cd873e88a46ae279b01b4e4ec370fa38a6d6e16944e6cf6"
+    },
+    "source-driven-development": {
+      "source": "addyosmani/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/source-driven-development/SKILL.md",
+      "computedHash": "60cff6e7bfaeebf37929399786730b260ea0441b23e1a05fdb4d7244eac3fae4"
+    },
+    "spec-driven-development": {
+      "source": "addyosmani/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/spec-driven-development/SKILL.md",
+      "computedHash": "e1ac9b69a18c946b903623ea9a07953e783758c60274bf63bea713b54504bed4"
+    },
+    "spreadsheet-analysis": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "documents-and-files/spreadsheet-analysis/SKILL.md",
+      "computedHash": "76482c19d8a0af18267faa429f952bc0eafaa03e564deaba8785d735d85cd3ad"
+    },
+    "sql-query-generation": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "data-and-analytics/sql-query-generation/SKILL.md",
+      "computedHash": "d6d0d7024c50f4d729d1e09f8216f532e9c4b34c38ff10a532812932c67b6593"
+    },
+    "static-application-security-testing": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "security/static-application-security-testing/SKILL.md",
+      "computedHash": "7898308c627421fa33151c68500b64578192f0881e684b306c8cb24929800483"
+    },
+    "subagent-driven-development": {
+      "source": "obra/superpowers",
+      "sourceType": "github",
+      "skillPath": "skills/subagent-driven-development/SKILL.md",
+      "computedHash": "da0ad5e635b6ff70c2b6dbf25e51ae6ca1cad6beebfc61a791195675468c492e"
+    },
+    "summarization": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "research-and-knowledge/summarization/SKILL.md",
+      "computedHash": "6b8fcbe12744e00bb6af6765598cf8807f6c0bc36125040cfc8e0be11e975393"
+    },
+    "systematic-debugging": {
+      "source": "obra/superpowers",
+      "sourceType": "github",
+      "skillPath": "skills/systematic-debugging/SKILL.md",
+      "computedHash": "79ff0583175346e39431b0dc713b223edd1bd7a7ea2b6c8b78b2fb9a3fed6782"
+    },
+    "task-automation": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "productivity-and-workflow/task-automation/SKILL.md",
+      "computedHash": "593c9b6796997d77b10fea1432269e04c16ee6e96e90a41dcb961c7e46d82eef"
+    },
+    "tdd": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/engineering/tdd/SKILL.md",
+      "computedHash": "e3e0f78ff1c2d52ffefa0378baa1e80e129d359288cf9a56f4e59afcd2aac86c"
+    },
+    "teach": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/productivity/teach/SKILL.md",
+      "computedHash": "31bb3eed09dd2787e290e933def99fbf7d65044a29119c224af47c01404ab228"
+    },
+    "technical-writing": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "writing-and-content/technical-writing/SKILL.md",
+      "computedHash": "b3f51783b8fbb0307e1cd1cbb365f6245ecd4af7794c4573d129c26b6f8a7eee"
+    },
+    "terms-of-service-generation": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "legal-and-compliance/terms-of-service-generation/SKILL.md",
+      "computedHash": "5b4231af12064d2bade406d9721243c1178494025073ef71457e3ed3fae84c2b"
+    },
+    "test-driven-development": {
+      "source": "addyosmani/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/test-driven-development/SKILL.md",
+      "computedHash": "60f294cc1ededf0d006811f4be199a415493fc048b6058c5b66193fba114a173"
+    },
+    "testing": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "code-and-development/testing/SKILL.md",
+      "computedHash": "05cb49279b4b6374916612435712e27c1727fb9db921065d0415885b8c911ae5"
+    },
+    "threat-modeling": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "security/threat-modeling/SKILL.md",
+      "computedHash": "6787c8942991fc96585058d7bb4b6f4b2ff32693d795dd499fbe3a4a1eb9a716"
+    },
+    "ticket-triage": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "customer-success/ticket-triage/SKILL.md",
+      "computedHash": "725fe5570c832360f151903c7d24ddfbed10ff827ff39e6a5d60503b16eedba8"
+    },
+    "to-questionnaire": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/productivity/to-questionnaire/SKILL.md",
+      "computedHash": "0bcb2b31a45a3d176daa07c16d6532ee7819b802de081090c3fa856702767b13"
+    },
+    "to-spec": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/engineering/to-spec/SKILL.md",
+      "computedHash": "eb934b5eda9523c7853a2741544bd4721ee1bea471f5a04f8397827f67bdbdda"
+    },
+    "to-tickets": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/engineering/to-tickets/SKILL.md",
+      "computedHash": "17496514c92954f68eacdf2b1221e2ddb39fa231b83f03c70bc7d4422f704b2d"
+    },
+    "tool-schema-design": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "agent-engineering/tool-schema-design/SKILL.md",
+      "computedHash": "2e1d65557ed15712c4229eaf9315ebc11ac0043307ef42cc221ebb927e07eee2"
+    },
+    "translation": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "writing-and-content/translation/SKILL.md",
+      "computedHash": "11116e852e01cd7069d3c9d94395fe9d26aeb63181a997d7685ee0a1eb72b8cc"
+    },
+    "triage": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/engineering/triage/SKILL.md",
+      "computedHash": "4342a07c9ebe0696713ec93a883c46e56503a587a34d824fabab5ca61e3bdfbb"
+    },
+    "upstash": {
+      "source": "upstash/skills",
+      "sourceType": "github",
+      "skillPath": "skills/upstash/SKILL.md",
+      "computedHash": "8af51bd0b25eca13a767df201757607fbbd24b8ee9de4dd0f850d6419d4485ed"
+    },
+    "upstash-blob-js": {
+      "source": "upstash/skills",
+      "sourceType": "github",
+      "skillPath": "skills/upstash-blob-js/SKILL.md",
+      "computedHash": "c5ba7918d590b1b1c21f46915a91e9f1189e58a7cfb2ad460745e7ac28903dfc"
+    },
+    "upstash-box-cli": {
+      "source": "upstash/skills",
+      "sourceType": "github",
+      "skillPath": "skills/upstash-box-cli/SKILL.md",
+      "computedHash": "534c1d8c54ea0acca089803ef0eed7f00e26500495d12b4cf0b652f6a174ec16"
+    },
+    "upstash-box-js": {
+      "source": "upstash/skills",
+      "sourceType": "github",
+      "skillPath": "skills/upstash-box-js/SKILL.md",
+      "computedHash": "2835f3cfc3019758f139f72f57e29fdb0311686a87a89876b2e6ba0d4e04c93b"
+    },
+    "upstash-box-py": {
+      "source": "upstash/skills",
+      "sourceType": "github",
+      "skillPath": "skills/upstash-box-py/SKILL.md",
+      "computedHash": "965d73eaa782fbdb9f7fd9b52c96e9c6570b5948e7241edd88c50c1aaaebcc2f"
+    },
+    "upstash-box-remote-work": {
+      "source": "upstash/skills",
+      "sourceType": "github",
+      "skillPath": "skills/upstash-box-remote-work/SKILL.md",
+      "computedHash": "b0a4c0524c9db722da9942cad1e6593a4d6c39f14774e97b29864c6452185e38"
+    },
+    "upstash-cli": {
+      "source": "upstash/skills",
+      "sourceType": "github",
+      "skillPath": "skills/upstash-cli/SKILL.md",
+      "computedHash": "24c751652b2c152acf599523f7b3a1aa1113d74d34cae7d9115e1cd7745672ce"
+    },
+    "upstash-qstash-js": {
+      "source": "upstash/skills",
+      "sourceType": "github",
+      "skillPath": "skills/upstash-qstash-js/SKILL.md",
+      "computedHash": "49495dc4f5bbcba3d49c90432ba8d3ae71ceb0c515bcb84168fbe781dad1eb3e"
+    },
+    "upstash-ratelimit-js": {
+      "source": "upstash/skills",
+      "sourceType": "github",
+      "skillPath": "skills/upstash-ratelimit-js/SKILL.md",
+      "computedHash": "a8d5d7f4433956518671537979c69dc8c3cc8c06ff3a523c0d7cec8f7a240551"
+    },
+    "upstash-redis-js": {
+      "source": "upstash/skills",
+      "sourceType": "github",
+      "skillPath": "skills/upstash-redis-js/SKILL.md",
+      "computedHash": "c85d7713babd8bd1eeb28c30b0cf500cb79faa5777f84eb19c9f8a0cee48d0cf"
+    },
+    "upstash-redis-start": {
+      "source": "upstash/skills",
+      "sourceType": "github",
+      "skillPath": "skills/upstash-redis-start/SKILL.md",
+      "computedHash": "3d97ad538866d628998f742df74cf22a61ed9d266cdedc17b13e8b13ed82250f"
+    },
+    "upstash-search-js": {
+      "source": "upstash/skills",
+      "sourceType": "github",
+      "skillPath": "skills/upstash-search-js/SKILL.md",
+      "computedHash": "a05159c1cfb3fde74975674ba32cd169d5215b5f4671409a7a160a1a98c97ca5"
+    },
+    "upstash-vector-js": {
+      "source": "upstash/skills",
+      "sourceType": "github",
+      "skillPath": "skills/upstash-vector-js/SKILL.md",
+      "computedHash": "3a634c2e8488e16ee4862fe86182c45579b6c02ff511c9858881cd28a6a5e3eb"
+    },
+    "upstash-workflow-js": {
+      "source": "upstash/skills",
+      "sourceType": "github",
+      "skillPath": "skills/upstash-workflow-js/SKILL.md",
+      "computedHash": "93c02569113ae5ec7adeac3325a3e38c1e5ec98e31ba7485de95aa276482b63e"
+    },
+    "user-flow-mapping": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "design-and-ui-ux/user-flow-mapping/SKILL.md",
+      "computedHash": "57593767bac965def5767650c50bf85ae4b4b6d3baab1361f9c36f0524172634"
+    },
+    "using-agent-skills": {
+      "source": "addyosmani/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/using-agent-skills/SKILL.md",
+      "computedHash": "64ee1ea9d458df9cd5cdbf40dd0961a0322d9be6b85e45f9de8abae65b4fe7b1"
+    },
+    "using-git-worktrees": {
+      "source": "obra/superpowers",
+      "sourceType": "github",
+      "skillPath": "skills/using-git-worktrees/SKILL.md",
+      "computedHash": "b69324cb5e5ba5b846fc2ae2811616008dc6f19858245100e472713190d4c9e4"
+    },
+    "using-superpowers": {
+      "source": "obra/superpowers",
+      "sourceType": "github",
+      "skillPath": "skills/using-superpowers/SKILL.md",
+      "computedHash": "6a9104fac7e16c3cec2bc118943aefd331cac35b4cfabd427cea4dc16337c6a5"
+    },
+    "verification-before-completion": {
+      "source": "obra/superpowers",
+      "sourceType": "github",
+      "skillPath": "skills/verification-before-completion/SKILL.md",
+      "computedHash": "09b0e3a4689c1c38a3b8fc6ef57a1d4165aa33c0013d546dbde9dd348941a319"
+    },
+    "version-control": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "code-and-development/version-control/SKILL.md",
+      "computedHash": "9e0f01e70930fa14dcaedae3494a602432e4f2966d4105196dc3efb8648d7160"
+    },
+    "wait-what": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/productivity/wait-what/SKILL.md",
+      "computedHash": "70c9bf9f5a84b6849760f9492f569d5aa12307a0310323fde5f583144730c26c"
+    },
+    "wayfinder": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/engineering/wayfinder/SKILL.md",
+      "computedHash": "bd82983c105881f6cb0c15e5d029c0d5fca756939b69eebe94e49003069a276f"
+    },
+    "webhook-setup": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "api-and-integration/webhook-setup/SKILL.md",
+      "computedHash": "6f00c950d3817b4390a387bbce2a0e5270e87a44701c13cc8e9ecd6ef42067cd"
+    },
+    "wireframing": {
+      "source": "seb1n/awesome-ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "design-and-ui-ux/wireframing/SKILL.md",
+      "computedHash": "01fe3d327f6f59283241bdd384f471722fcbed5349d911f3e5fa218d54393914"
+    },
+    "wizard": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/engineering/wizard/SKILL.md",
+      "computedHash": "806f7f7461824054ffaf3344e1e56e5e8a42344e22bdf8d22c6a8117eb9b1c38"
+    },
+    "writing-beats": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/in-progress/writing-beats/SKILL.md",
+      "computedHash": "5af3ce4383f995c76a4780b3d3029af8e9c69aa1a44d57a6c8bc13a820836b8a"
+    },
+    "writing-for-agents": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/productivity/writing-for-agents/SKILL.md",
+      "computedHash": "e79a2476b2417b228922453478d9505a6b9af19f3a412e560728ce62ed3555ca"
+    },
+    "writing-fragments": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/in-progress/writing-fragments/SKILL.md",
+      "computedHash": "00d286876c139f3f764e5021923f632c785dba1eb2fd7afdd9f44854a12772d2"
+    },
+    "writing-plans": {
+      "source": "obra/superpowers",
+      "sourceType": "github",
+      "skillPath": "skills/writing-plans/SKILL.md",
+      "computedHash": "ef082ddb5354d736059397133b3682e8a0c85c57906affe47c9da354cbb7c91e"
+    },
+    "writing-shape": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/in-progress/writing-shape/SKILL.md",
+      "computedHash": "7e06f4ca8a96c83b5b9a540c0279e998ba449e74586c77d44f9b8183c1bd8ef8"
+    },
+    "writing-skills": {
+      "source": "obra/superpowers",
+      "sourceType": "github",
+      "skillPath": "skills/writing-skills/SKILL.md",
+      "computedHash": "50d87a4c2c6a9d60156ccfdbe844e0a11678968157e494a8a8c02377c273483a"
     }
   }
 }
