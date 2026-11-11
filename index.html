@@ -136,7 +136,7 @@
             const script = document.createElement('script');
             script.src = `${serverURL}/socket.io/socket.io.js`;
             script.onload = () => {
-                socket = io(serverURL, { auth: { token: token } });
+                socket = io(serverURL, { auth: { token: token }, transports: ['websocket'] });
                 socket.on('connect', () => {
                     document.getElementById('socket-status').className = 'status-badge online';
                     document.getElementById('socket-dot').style.background = 'var(--neon-green)';
