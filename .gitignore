@@ -2,3 +2,8 @@ node_modules/
 soc_database.db
 .env
 *.log
+agent.js
+fix_redis.py
+fix_redis_only.py
+setup_render.py
+setup_render.sh
