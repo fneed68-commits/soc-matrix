@@ -19,9 +19,19 @@ app.set('trust proxy', 1); // ضروري لـ Render لمعرفة IP الحقي�
 app.use(express.json());
 
 const Redis = require('ioredis');
-const redis = new Redis(process.env.REDIS_URL || 'redis://localhost:6379');
+let redis = null;
+try {
+  redis = new Redis(process.env.REDIS_URL || 'redis://localhost:6379');
+  redis.on('error', (err) => {
+    console.error('Redis connection error:', err.message);
+  });
+} catch (err) {
+  console.error('Failed to initialize Redis, continuing without rate limiting:', err.message);
+  redis = null;
+}
 
 async function rateLimiter(req, res, next) {
+  if (!redis) return next(); // Fail-Open: Redis غير متاح، اسمح بالمرور
   try {
     const ip = req.ip || 'unknown';
     const key = 'rl:' + ip;
